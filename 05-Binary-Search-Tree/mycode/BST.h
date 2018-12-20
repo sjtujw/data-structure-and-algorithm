@@ -102,6 +102,9 @@ class BST{
 		void remove(Key key){
 			root = remove(root,key);
 		}
+		void printfunc(){
+			cout<<" .... "<<endl;
+		}
 	private:
 		Node* remove(Node* node,Key key){
 			if(node == NULL)
@@ -204,8 +207,11 @@ class BST{
 			if(key==node->key)
 				return &(node->value);
 			else if(key>node->key)
+
 				return search(node->right,key);
+
 			else
+
 				return search(node->left,key);
 		}
 		bool contain(Node* node,Key key){
