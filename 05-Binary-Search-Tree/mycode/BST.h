@@ -102,9 +102,12 @@ class BST{
 		void remove(Key key){
 			root = remove(root,key);
 		}
+<<<<<<< HEAD
 		void printfunc(){
 			cout<<" .... "<<endl;
 		}
+=======
+>>>>>>> upload local data dtructure to merge
 	private:
 		Node* remove(Node* node,Key key){
 			if(node == NULL)
@@ -133,7 +136,11 @@ class BST{
 				//node->left != NULL && node->right != NULL
 				Node *successor = new Node(minimum(node->right));
 				count++;
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> upload local data dtructure to merge
 				successor->right = rmMin(node->right);
 				successor->left = node->left;
 				delete node;
@@ -207,11 +214,16 @@ class BST{
 			if(key==node->key)
 				return &(node->value);
 			else if(key>node->key)
+<<<<<<< HEAD
 
 				return search(node->right,key);
 
 			else
 
+=======
+				return search(node->right,key);
+			else
+>>>>>>> upload local data dtructure to merge
 				return search(node->left,key);
 		}
 		bool contain(Node* node,Key key){
