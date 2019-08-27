@@ -18,7 +18,9 @@
 ## 基本操作：左旋右旋
 * 我的理解：<br>
     - 左旋是将一个节点左旋变成一个左节点，此时它的右节点代替原节点的位置，右节点的左孩子变为原节点的右孩子，原节点左孩子不变。（方向是向左的）<br>
+    ![](https://github.com/sjtujw/data-structure-and-algorithm/raw/master/img/left_rotate.jpg)
     - 右旋是将一个节点右旋变为一个右节点，此时它的左节点代替原节点的位置，左节点的右孩子变为原节点的左孩子，原节点右孩子不变。（方向是向右的）<br>
+    ![](https://github.com/sjtujw/data-structure-and-algorithm/raw/master/img/right_rotate.jpg)
 ## 基本操作：添加
 * 第一步: 将红黑树当作一颗二叉查找树，将节点插入。
 * 第二步：将插入的节点着色为"红色"。
